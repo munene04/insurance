@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">insuranceapp</string>
+    <string name="homepageheader">INSURANCE</string>
 </resources>
