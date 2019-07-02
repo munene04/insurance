@@ -1,19 +1,107 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-    <RelativeLayout
-    tools:context=".ActivityOne"
-    android:layout_height="match_parent"
-    android:layout_width="match_parent"
-    xmlns:tools="http://schemas.android.com/tools"
+
+<com.imangazaliev.circlemenu.CircleMenu android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_centerInParent="true"
+    app:openOnStart="true"
+    android:layout_gravity="center"
+    app:hintsEnabled="true"
+    android:id="@+id/circleMenu"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <TextView
-        android:layout_height="wrap_content"
+    <com.imangazaliev.circlemenu.CircleMenuButton
+        android:id="@+id/settings"
         android:layout_width="wrap_content"
-        android:layout_centerInParent="true"
-        android:textSize="24sp"
-        android:text="Activity One"
-        android:id="@+id/txtInfo"/>
+        android:layout_height="wrap_content"
+        app:colorNormal="#2196F3"
+        app:hintText="Settings"
+        app:colorPressed="#1E88E5"
+        app:icon="@drawable/ic_settings_black_24dp"/>
 
-</RelativeLayout>
+    <com.imangazaliev.circlemenu.CircleMenuButton
+        android:id="@+id/message"
+        app:hintText="Message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:colorNormal="#FFA500"
+        app:colorPressed="#FFA500"
+        app:icon="@drawable/ic_message_black_24dp"/>
+
+    <com.imangazaliev.circlemenu.CircleMenuButton
+        android:id="@+id/call"
+        app:hintText="Call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:colorNormal="#4CAF50"
+        app:colorPressed="#43A047"
+        app:icon="@drawable/ic_call_black_24dp"/>
+    <com.imangazaliev.circlemenu.CircleMenuButton
+        android:id="@+id/car"
+        app:hintText="Call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:colorNormal="#F44336"
+        app:colorPressed="#E53935"
+        app:icon="@drawable/ic_car_black_24dp"/>
+    <com.imangazaliev.circlemenu.CircleMenuButton
+        android:id="@+id/school"
+        app:hintText="Call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:colorNormal="#FFFF00"
+        app:colorPressed="#FFFF00"
+        app:icon="@drawable/ic_school_black_24dp"/>
+    <com.imangazaliev.circlemenu.CircleMenuButton
+        android:id="@+id/hospital"
+        app:hintText="Call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:colorNormal="#800080"
+        app:colorPressed="#800080"
+        app:icon="@drawable/ic_local_hospital_black_24dp"/>
+
+</com.imangazaliev.circlemenu.CircleMenu>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--<RelativeLayout-->
+    <!--tools:context=".ActivityOne"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_width="match_parent"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--xmlns:android="http://schemas.android.com/apk/res/android">-->
+
+    <!--<TextView-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_centerInParent="true"-->
+        <!--android:textSize="24sp"-->
+        <!--android:text="Activity One"-->
+        <!--android:id="@+id/txtInfo"/>-->
+
+<!--</RelativeLayout>-->
