@@ -6,6 +6,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_centerInParent="true"
     app:openOnStart="true"
+
+
     android:layout_gravity="center"
     app:hintsEnabled="true"
     android:id="@+id/circleMenu"
@@ -39,7 +41,7 @@
         app:icon="@drawable/ic_call_black_24dp"/>
     <com.imangazaliev.circlemenu.CircleMenuButton
         android:id="@+id/car"
-        app:hintText="Call"
+        app:hintText="Car"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:colorNormal="#F44336"
@@ -47,7 +49,7 @@
         app:icon="@drawable/ic_car_black_24dp"/>
     <com.imangazaliev.circlemenu.CircleMenuButton
         android:id="@+id/school"
-        app:hintText="Call"
+        app:hintText="School"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:colorNormal="#FFFF00"
@@ -55,7 +57,7 @@
         app:icon="@drawable/ic_school_black_24dp"/>
     <com.imangazaliev.circlemenu.CircleMenuButton
         android:id="@+id/hospital"
-        app:hintText="Call"
+        app:hintText="Hospital"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:colorNormal="#800080"
