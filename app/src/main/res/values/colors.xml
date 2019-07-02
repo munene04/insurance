@@ -4,5 +4,5 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
     <color name="blue">#258cec</color>
-    <color name="splashBackground">#a9ffcf</color>
+    <color name="splashBackground">#FFF</color>
 </resources>
