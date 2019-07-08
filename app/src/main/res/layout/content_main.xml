@@ -106,12 +106,12 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
-                        android:src="@drawable/apointment" />
+                        android:src="@drawable/ic_schedule_black_24dp" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="appointment"
+                        android:text="Schedule appointment"
                         android:textAlignment="center"
                         android:textColor="@android:color/black"
                         android:textSize="18sp"
@@ -227,7 +227,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
-                        android:src="@drawable/quote" />
+                        android:src="@drawable/ic_format_quote_black_24dp" />
 
                     <TextView
                         android:layout_width="wrap_content"
