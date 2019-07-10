@@ -3,7 +3,6 @@ package android.example.insuranceapp;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
-import android.widget.TextView;
 
 import com.imangazaliev.circlemenu.CircleMenu;
 import com.imangazaliev.circlemenu.CircleMenuButton;
@@ -13,7 +12,7 @@ public class ActivityOne extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_one);
+        setContentView(R.layout.circlemenu);
 
         CircleMenu circleMenu = findViewById(R.id.circleMenu);
         circleMenu.setOnItemClickListener(new CircleMenu.OnItemClickListener() {

@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
-    <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="activity_margin">8dp</dimen>
+    <dimen name="card_margin_horizontal">8dp</dimen>
+    <dimen name="view_margin_vertical">4dp</dimen>
+    <dimen name="list_card_margin_top">8dp</dimen>
+    <dimen name="list_card_margin_bottom">10dp</dimen>
+    <dimen name="grid_margin">8dp</dimen>
+    <dimen name="grid_menu_margin">6dp</dimen>
 </resources>

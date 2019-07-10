@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hosted_url">http://cloudco.mybluemix.net</string>
+    <string name="ana">/api/ana</string>
+    <string name="login">/login</string>
+    <string name="signup">/signup</string>
+</resources>

@@ -39,7 +39,7 @@
             android:alignmentMode="alignMargins"
             android:columnCount="2"
             android:columnOrderPreserved="false"
-            android:padding="10dp"
+            android:padding="5dp"
             android:rowCount="3">
 
             <!-- Row 1 -->
@@ -47,7 +47,7 @@
             <!-- Column 1 -->
             <android.support.v7.widget.CardView
                 android:layout_width="0dp"
-                android:layout_height="0dp"
+                android:layout_height="5dp"
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
                 android:layout_marginLeft="16dp"
@@ -321,7 +321,7 @@
 
             </android.support.v7.widget.CardView>
 
-To add more cards
+
             <android.support.v7.widget.CardView
                 android:layout_width="0dp"
                 android:layout_height="0dp"
@@ -358,6 +358,7 @@ To add more cards
                 </LinearLayout>
 
             </android.support.v7.widget.CardView>
+
             <android.support.v7.widget.CardView
                 android:layout_width="0dp"
                 android:layout_height="0dp"
