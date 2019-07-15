@@ -3,4 +3,6 @@
     <string name="homepageheader">INSURANCE</string>
     <string name="request_text">Enter request</string>
     <string name="button_send">Ask a question</string>
+    <string name="feedbackname">Enter name here</string>
+    <string name="feedbacktitle">Name</string>
 </resources>

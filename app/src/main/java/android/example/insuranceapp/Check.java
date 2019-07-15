@@ -1,4 +1,4 @@
-package android.example.utils;
+package android.example.insuranceapp;
 
 import android.content.Context;
 import android.net.ConnectivityManager;
