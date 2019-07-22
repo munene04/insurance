@@ -1,29 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/ScrollView01"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:scrollbars="vertical">
-    <LinearLayout
-        android:layout_width="fill_parent"
-        android:orientation="vertical"
-        android:layout_height="fill_parent">
 
-        <!--Form controls-->
-        <TextView
-            android:id="@+id/TextViewTitle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/feedbacktitle"
-            android:textSize="10pt">
-        </TextView>
-        <EditText
-            android:id="@+id/EditTextName"
-            android:layout_height="wrap_content"
-            android:hint="@string/feedbackname"
-            android:inputType="textPersonName"
-            android:layout_width="fill_parent">
-        </EditText>
-    </LinearLayout>
-</ScrollView>
+<LinearLayout
+    android:padding="16dp"
+    android:orientation="vertical"
+    android:background="@color/accent"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:typeface="serif"
+        android:textSize="40sp"
+        android:textColor="#ce3232"
+        android:text="Contact Us"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="16dp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/contact_form_title"/>
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:inputType="textPersonName"
+        android:hint="Name"
+        android:backgroundTint="@color/colorPrimaryDark"/>
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:inputType="textEmailAddress"
+        android:hint="Email"
+        android:backgroundTint="@color/colorPrimaryDark"/>
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:inputType="phone"
+        android:hint="Phone"
+        android:backgroundTint="@color/colorPrimaryDark"/>
+
+    <EditText
+        android:padding="5dp"
+        android:layout_height="150dp"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:inputType="textMultiLine"
+        android:hint="Your Message"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:singleLine="false"
+        android:breakStrategy="balanced"
+        android:fitsSystemWindows="true"
+        android:gravity="top"/>
+
+    <Button
+        android:background="@color/colorPrimaryDark"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textColor="#fff"
+        android:text="Submit"
+        android:layout_gravity="center_horizontal"
+        android:paddingRight="70dp"
+        android:paddingLeft="70dp"
+        android:elevation="4dp"/>
+
+</LinearLayout>
