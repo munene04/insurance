@@ -1,77 +1,83 @@
 package android.example.insuranceapp;
 
-
 import android.content.Context;
-import android.support.annotation.NonNull;
+import android.content.Intent;
+import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
+import java.util.List;
 
 
-public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder> {
+public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.MyViewHolder> {
 
-    private String[] mData;
-    private LayoutInflater mInflater;
-    private ItemClickListener mClickListener;
+    private Context mContext ;
+    private List<Pol> mData ;
 
-    // data is passed into the constructor
-    RecyclerViewAdapter(Context context, String[] data) {
-        this.mInflater = LayoutInflater.from(context);
-        this.mData = data;
+
+    public RecyclerViewAdapter(Context mContext, List<Pol> mData) {
+        this.mContext = mContext;
+        this.mData = mData;
     }
 
-    // inflates the cell layout from xml when needed
     @Override
-    @NonNull
-    public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = mInflater.inflate(R.layout.recyclerview, parent, false);
-        return new ViewHolder(view);
+    public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+
+        View view ;
+        LayoutInflater mInflater = LayoutInflater.from(mContext);
+        view = mInflater.inflate(R.layout.cardview_item,parent,false);
+        return new MyViewHolder(view);
     }
 
-    // binds the data to the TextView in each cell
     @Override
-    public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        holder.myTextView.setText(mData[position]);
+    public void onBindViewHolder(MyViewHolder holder, final int position) {
+
+        holder.tv_book_title.setText(mData.get(position).getTitle());
+        holder.img_book_thumbnail.setImageResource(mData.get(position).getThumbnail());
+        holder.cardView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(mContext, Ins_Activity.class);
+
+                // passing data to the book activity
+                intent.putExtra("Title",mData.get(position).getTitle());
+                intent.putExtra("Description",mData.get(position).getDescription());
+                intent.putExtra("Thumbnail",mData.get(position).getThumbnail());
+                // start the activity
+                mContext.startActivity(intent);
+
+            }
+        });
+
+
+
     }
 
-    // total number of cells
     @Override
     public int getItemCount() {
-        return mData.length;
+        return mData.size();
     }
 
+    public static class MyViewHolder extends RecyclerView.ViewHolder {
 
-    // stores and recycles views as they are scrolled off screen
-    public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
-        TextView myTextView;
+        TextView tv_book_title;
+        ImageView img_book_thumbnail;
+        CardView cardView ;
 
-        ViewHolder(View itemView) {
+        public MyViewHolder(View itemView) {
             super(itemView);
-            myTextView = itemView.findViewById(R.id.info_text);
-            itemView.setOnClickListener(this);
+
+            tv_book_title = (TextView) itemView.findViewById(R.id.i_title_id) ;
+            img_book_thumbnail = (ImageView) itemView.findViewById(R.id.i_img_id);
+            cardView = (CardView) itemView.findViewById(R.id.cardview_id);
+
+
         }
-
-        @Override
-        public void onClick(View view) {
-            if (mClickListener != null) mClickListener.onItemClick(view, getAdapterPosition());
-        }
     }
 
-    // convenience method for getting data at click position
-    String getItem(int id) {
-        return mData[id];
-    }
 
-    // allows clicks events to be caught
-    void setClickListener(ItemClickListener itemClickListener) {
-        this.mClickListener = itemClickListener;
-    }
-
-    // parent activity will implement this method to respond to click events
-    public interface ItemClickListener {
-        void onItemClick(View view, int position);
-    }
 }

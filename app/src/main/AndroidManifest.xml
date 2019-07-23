@@ -15,7 +15,7 @@
             <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".ActivityOne"></activity>
+        <activity android:name=".Ins_Activity"></activity>
         <activity android:name=".SplashActivity"></activity>
         <activity android:name=".CircleActivity"></activity>
 

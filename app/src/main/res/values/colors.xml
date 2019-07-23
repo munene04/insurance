@@ -2,13 +2,10 @@
 <resources>
 
     <color name="colorPrimaryDark">#263238</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorAccent">#00bfff</color>
     <color name="primary">#273D56</color>
     <color name="accent">#FFFFFF</color>
     <color name="textColor">#000000</color>
-    <color name="selectionColor">#99dfdfdf</color>
-    <color name="transparent">#00000000</color>
-    <color name="jumbo">#888888</color>
     <color name="iron">#CCCCCC</color>
     <color name="white">#FFFFFF</color>
 </resources>
