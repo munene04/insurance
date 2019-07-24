@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-public class Ins_Activity extends AppCompatActivity {
+public class Pol_Activity extends AppCompatActivity {
 
     private TextView ptitle,pdescription,pcategory;
     private ImageView img;
@@ -14,7 +14,7 @@ public class Ins_Activity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_ins);
+        setContentView(R.layout.activity_pol_view);
 
         ptitle = (TextView) findViewById(R.id.ititle);
         pdescription = (TextView) findViewById(R.id.iDesc);

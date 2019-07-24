@@ -15,10 +15,10 @@
             <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".Ins_Activity"></activity>
+        <activity android:name=".Pol_Activity"></activity>
         <activity android:name=".MainActivity"></activity>
         <activity android:name=".CircleActivity"></activity>
-
+        <activity android:name=".Pol_Call_Activity"></activity>
 
     </application>
 

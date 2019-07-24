@@ -2,7 +2,7 @@
 
 <LinearLayout
     android:background="#fcfcfc"
-    tools:context=".Ins_Activity"
+    tools:context=".Pol_Activity"
     android:layout_height="match_parent"
     android:layout_width="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
@@ -35,7 +35,7 @@
         android:id="@+id/ititle"
         android:textStyle="bold"
         android:textSize="18sp"
-        android:text="Book Title"/>
+        android:text="Policy Title"/>
 
     <TextView
         android:background="#edecec"

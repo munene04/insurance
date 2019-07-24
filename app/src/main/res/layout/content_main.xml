@@ -31,7 +31,7 @@
 
         </RelativeLayout>
 
-        <GridView
+        <GridLayout
             android:id="@+id/mainGrid"
             android:layout_width="match_parent"
             android:rowCount="3"
@@ -362,7 +362,7 @@
 
             </android.support.v7.widget.CardView>
 
-        </GridView>
+        </GridLayout>
 
 </LinearLayout>
 
